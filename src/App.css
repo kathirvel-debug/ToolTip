@@ -1,0 +1,189 @@
+#container {
+  width: 90%;
+  margin: 5%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3%;
+  transition: flex-wrap 0.5s ease;
+}
+.neat-pop-msg {
+  background-color: rgb(1, 16, 21);
+  padding: 5px;
+  border-radius: 4px;
+  position: absolute;
+  top: calc(100% + 5px); /* Position below the input */
+  left: 0;
+}
+.title {
+  display: flex;
+  width: 90%;
+
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.element {
+  width: 300px;
+  height: 200px;
+  background-color: #000;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.5s all;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://img.freepik.com/free-vector/gradient-podium-background_52683-76369.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.element:hover {
+  width: 330px;
+  height: 230px;
+}
+
+.element:hover p {
+  display: block;
+}
+
+.element p {
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 15px;
+  display: none;
+  transition: 0.5s all;
+
+}
+
+.btn {
+  color: white;
+  padding: .75rem 2.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  background-color: red;
+}
+
+.btn-beginner:hover {
+  background-color: #60c365;
+}
+
+.searchbox-wrap {
+  display: flex;
+  width: 500px;
+  margin-top: 5px;
+  input {
+      flex: 1;
+      padding: 17px 20px;
+      font-size: 1.1em;
+
+      -webkit-border-top-left-radius: 25px;
+      -webkit-border-bottom-left-radius: 25px;
+      -moz-border-radius-topleft: 25px;
+      -moz-border-radius-bottomleft: 25px;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      box-shadow: none;
+      border: none;
+      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+      outline: none;
+  }
+
+  button {
+      padding-right: 10px;
+
+      background-color: #fff;
+      -webkit-border-top-right-radius: 25px;
+      -webkit-border-bottom-right-radius: 25px;
+      -moz-border-radius-topright: 25px;
+      -moz-border-radius-bottomright: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.19);
+      border: none;
+      cursor: pointer;
+      cursor: hand;
+
+      span {
+          margin-left: 50px;
+          padding: 17px 45px;
+
+          font-size: 0.9em;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: #fff;
+          background-color: #F54E59;
+
+          border-radius: 20px;
+          box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+
+          &:hover {
+              background-color: #d6121f;
+              box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.19);
+          }
+
+      }
+  }
+}
+
+.create {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  padding: 5px;
+  margin-left: 29%;
+  border-radius: 2px red;
+  background-color: whitesmoke;
+  border-radius: -2%;
+  box-shadow: blanchedalmond;
+  box-shadow: 2px red;
+  box-shadow: 1px 8px 6px rgba(0, 0, 0, 0.19);
+
+}
+/* image css */
+.image-area {
+  position: relative;
+  width: 250px;
+  background: #333;
+}
+.image-area img{
+  max-width: 100%;
+  height: auto;
+}
+.remove-image {
+display: none;
+position: absolute;
+top: -10px;
+right: -10px;
+border-radius: 10em;
+padding: 2px 6px 3px;
+text-decoration: none;
+font: 700 21px/20px sans-serif;
+background: #555;
+border: 3px solid #fff;
+color: #FFF;
+box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.remove-image:hover {
+ background: #E54E4E;
+  padding: 3px 7px 5px;
+  top: -11px;
+right: -11px;
+}
+.remove-image:active {
+ background: #E54E4E;
+  top: -10px;
+right: -11px;
+}
